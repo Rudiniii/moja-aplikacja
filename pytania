@@ -1,0 +1,17 @@
+1. Co to VPS i jak sie rozwija ten skrot?
+VPS (Virtual Private Serwer) - forma hostingu w ktorej jeden fizyczny serwer jest podzielony na kilka mniejszych serwerow. Kazdy z nich dziala jak osobny komputer - z wlasnym systemem przestrzenia dyskowa i zagospodarowaniem RAM i CPU
+
+2. Czym sie rozni VPS od kontenerow np. Dockera?
+                    VPS                                                             Docker/Kontenery 
+tworzy wirtualna mayszyne z wlasnym systemem                        tworzy lekki kontener dzialajacy w ramach jednego systemu
+wiecej zasobow - wiekszy narzut                                     lekkie szybkie elastyczne
+uruchamiasz aplikacje w wirtulanym serwerze                         uruchamiasz apliakcje w kontenerze bez pelnego systemu
+wiecej izolacji ale mniej elastycznosci                             swietne do automatyzacji, DevOps, mikroserwisow
+
+3. Dlaczego apliakcje sa skonteneryzowane?
+-Ułatwia przenośność – działa tak samo lokalnie i w chmurze (np. "działa u mnie" już nie istnieje),
+-Przyspiesza wdrażanie (deployment) – jeden kontener = jedna aplikacja = szybkie aktualizacje,
+-Ułatwia skalowanie – możesz odpalać wiele instancji tej samej aplikacji błyskawicznie,
+-Izoluje środowiska – każda aplikacja działa w swoim zamkniętym świecie,
+-Automatyzacja i CI/CD – kontenery świetnie integrują się z narzędziami DevOps (np. GitHub Actions, Jenkins, etc.),
+-Oszczędność zasobów – nie potrzeba osobnego systemu operacyjnego dla każdej aplikacji.
